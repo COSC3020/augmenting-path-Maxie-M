@@ -1,4 +1,4 @@
-# Augmenting Paths
+1# Augmenting Paths
 
 When we talked about the Ford-Fulkerson algorithm to find the maximum flow
 through a graph, I mentioned the "find an augmenting path" function. You're
@@ -32,3 +32,24 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+## Runtime Anaylsis, Maxie M. 
+
+### Time Complexity
+- **Worst-Case:** may explore every node and edge in the graph
+- y**Adjacency List representation:** **time complexity* of DFS is $O(V + E)$
+  - for graph with $V$ vertices and $E$ edges
+  - due ti each node being visited and each edge being checked once
+### Space Complexity
+- **Space Complexity:** $O(V)$
+  - due to recursion stack and visited set
+    - both stores information for each node in the graph
+### Conclusion 
+- **Worst-Case Time and Space Complexity:** $\Theta(V + E)$
+
+
+### Plagiarism Statement:
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+### Resources:
+- https://www.baeldung.com/cs/augmenting-path
